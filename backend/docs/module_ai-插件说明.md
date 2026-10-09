@@ -6,7 +6,7 @@
 
 ## 一、插件定位
 
-`module_ai` 是 FastAPIAdmin 的 **AI 能力插件**，提供：
+`module_ai` 是 YR-Hrms 的 **AI 能力插件**，提供：
 
 1. **模型供应商管理**（一级：`ai_provider`）
 2. **模型管理**（二级：`ai_model`，归属供应商，支持同名模型跨供应商并存）

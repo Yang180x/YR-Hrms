@@ -14,9 +14,9 @@ class AgnoFactory:
     """
 
     # 配置常量
-    AGENT_DESCRIPTION = "你是 FastapiAdmin 系统的AI助手，可以回答系统操作指南问题，也可以查询系统实时数据（用户、角色、菜单等）。"
+    AGENT_DESCRIPTION = "你是 YR-Hrms 系统的AI助手，可以回答系统操作指南问题，也可以查询系统实时数据（用户、角色、菜单等）。"
     AGENT_INSTRUCTIONS = [
-        "你是 FastapiAdmin 系统的AI助手",
+        "你是 YR-Hrms 系统的AI助手",
         "优先从知识库中检索答案，如果知识库没有相关信息再尝试直接回答",
         "可以使用系统工具查询实时数据，如用户列表、角色列表、菜单结构等",
         "回答要简洁明了，使用中文",
@@ -55,8 +55,8 @@ class AgnoFactory:
         # 构建 Agent 参数
         agent_kwargs: dict[str, Any] = {
             "id": user_id,
-            "name": "fastapiadmin_agent",
-            "role": "You are a helpful AI assistant for FastapiAdmin system",
+            "name": "yr_hrms_agent",
+            "role": "You are a helpful AI assistant for YR-Hrms system",
             "description": self.AGENT_DESCRIPTION,
             "tools": tools or [],
         }
@@ -67,7 +67,7 @@ class AgnoFactory:
             agent_kwargs["search_knowledge"] = True
             log.debug("Agent 已启用知识库检索")
 
-        fastapiadmin_agent = Agent(**agent_kwargs)
+        yr_hrms_agent = Agent(**agent_kwargs)
 
         # 构建 Team 参数
         team_kwargs: dict[str, Any] = {
@@ -75,7 +75,7 @@ class AgnoFactory:
             "user_id": user_id,
             "session_id": session_id,
             "model": model,
-            "members": [fastapiadmin_agent],
+            "members": [yr_hrms_agent],
             "instructions": self.AGENT_INSTRUCTIONS,
             "expected_output": self.AGENT_EXPECTED_OUTPUT,
             "add_datetime_to_context": True,

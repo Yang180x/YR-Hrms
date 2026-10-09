@@ -112,7 +112,7 @@ class HomeTab extends StatelessWidget {
         color: DesignColors.primary,
         alignment: Alignment.center,
         child: Image.asset(
-          'assets/images/fastapiadmin_logo.png',
+          'assets/images/yr_hrms_logo.png',
           fit: BoxFit.contain,
           height: 150.h,
         ),

@@ -1,4 +1,4 @@
-/// FastapiAdmin 通用组件 barrel export
+/// YR-Hrms 通用组件 barrel export
 library;
 
 export 'app_td_button.dart';

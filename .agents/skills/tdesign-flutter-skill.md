@@ -1,11 +1,11 @@
 ---
 name: tdesign-flutter
-description: Use when 需要在 FastapiAdmin Flutter 移动端新增或优化 TDesign（tdesign_flutter fork 0.2.7）组件、排查 TDesign 样式/品牌色问题、或使用按钮/弹窗/Toast/加载/轮播等组件时加载。含 fork 版 API 差异（onTap/TDButtonTheme/TDAlertDialog 等）与落地案例。
+description: Use when 需要在 YR-Hrms Flutter 移动端新增或优化 TDesign（tdesign_flutter fork 0.2.7）组件、排查 TDesign 样式/品牌色问题、或使用按钮/弹窗/Toast/加载/轮播等组件时加载。含 fork 版 API 差异（onTap/TDButtonTheme/TDAlertDialog 等）与落地案例。
 ---
 
 # TDesign Flutter 组件库指南（fork 0.2.7）
 
-> 适用项目：fastapiadmin_mobile（FastapiAdmin Flutter 移动端）
+> 适用项目：yr_hrms_mobile（YR-Hrms Flutter 移动端）
 > 版本：`tdesign_flutter` **0.2.7**（git fork `runoob-coder/tdesign-flutter` @ ref `fix-IconData-for-0.2.7`）
 > 包位置：`~/.pub-cache/git/tdesign-flutter-26865fd5c2195c7fbad0afc851a0238815f745a7/tdesign-component`
 
@@ -44,7 +44,7 @@ import 'package:tdesign_flutter/tdesign_flutter.dart';
 
 **TDesign 组件颜色一律读 `TDTheme.of(context).xxx`（`TDThemeData.colorMap`），不读 `MaterialApp.theme`。** 改 `Material` 主题对 TDesign 组件无效。
 
-> ⚠️ **现状**：fastapiadmin 目前只在 `lib/main.dart` 配了 Material `ColorScheme.fromSeed(seedColor: DesignColors.primary)`，**尚未用 `TDTheme` 包裹**——因此 TDesign 组件当前走默认主题色（`#0052D9` 蓝），与品牌蓝 `DesignColors.primary`（#2563EB）不一致。需要对齐品牌色时，在 `lib/main.dart` 用 `TDTheme` 包裹 `MaterialApp`，品牌色对齐 `DesignColors.primary`：
+> ⚠️ **现状**：YR-Hrms 目前只在 `lib/main.dart` 配了 Material `ColorScheme.fromSeed(seedColor: DesignColors.primary)`，**尚未用 `TDTheme` 包裹**——因此 TDesign 组件当前走默认主题色（`#0052D9` 蓝），与品牌蓝 `DesignColors.primary`（#2563EB）不一致。需要对齐品牌色时，在 `lib/main.dart` 用 `TDTheme` 包裹 `MaterialApp`，品牌色对齐 `DesignColors.primary`：
 
 ```dart
 return TDTheme(

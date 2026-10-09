@@ -104,7 +104,7 @@ def setup_logging() -> None:
     global _logger_handlers
 
     # 添加上下文信息
-    _ = logger.configure(extra={"app_name": "FastapiAdmin"}, patcher=_context_patcher)
+    _ = logger.configure(extra={"app_name": "YR-Hrms"}, patcher=_context_patcher)
     # 步骤1：移除默认处理器
     logger.remove()
 

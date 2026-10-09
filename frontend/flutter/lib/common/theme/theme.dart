@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 import 'dimensions.dart';
 
-/// FastapiAdmin 设计系统 — 字体样式
+/// YR-Hrms 设计系统 — 字体样式
 abstract final class DesignTextStyle {
   DesignTextStyle._();
 

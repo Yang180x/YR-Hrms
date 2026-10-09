@@ -9,7 +9,7 @@ definePage({
 })
 
 const configForm = reactive({
-  siteName: 'FastAPI Admin',
+  siteName: 'YR-Hrms',
   siteDesc: '',
   logo: '',
   recordNo: '京ICP备00000000号',

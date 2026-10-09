@@ -2,7 +2,7 @@ import { defineConfig } from 'openapi-ts-request'
 
 export default defineConfig([
   {
-    describe: 'fastapiadmin-backend',
+    describe: 'yr-hrms-backend',
     // 真实后端 OpenAPI 快照（本地文件，离线可生成）。
     // 后端接口更新后刷新：curl -o src/api/openapi/openapi.json http://127.0.0.1:6100/openapi.json
     schemaPath: './src/api/openapi/openapi.json',

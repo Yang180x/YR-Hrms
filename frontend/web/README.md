@@ -1,6 +1,6 @@
-# FastAPI Admin · 前端工程（web）
+# YR-Hrms · 前端工程（web）
 
-基于 **Vue 3 + Vite + TypeScript + Element Plus** 的后台管理前端，与 FastAPI Admin 后端配套使用。状态管理为 **Pinia**，样式以 **Tailwind CSS 4** 与 **SCSS** 为主，接口请求使用 **Axios**。
+基于 **Vue 3 + Vite + TypeScript + Element Plus** 的后台管理前端，与 YR-Hrms 后端配套使用。状态管理为 **Pinia**，样式以 **Tailwind CSS 4** 与 **SCSS** 为主，接口请求使用 **Axios**。
 
 ## 架构概览
 
@@ -64,7 +64,7 @@ cp .env.example .env
 
 ### 4. 与后端联调
 
-1. 先启动 **FastAPI Admin 后端**，监听地址与 **`.env.development`** 里 **`VITE_API_BASE_URL`** 一致（模板默认为 **`http://127.0.0.1:8001`**）。
+1. 先启动 **YR-Hrms 后端**，监听地址与 **`.env.development`** 里 **`VITE_API_BASE_URL`** 一致（模板默认为 **`http://127.0.0.1:8001`**）。
 2. 前端开发时，浏览器请求发往当前页面同源路径，由 **Vite `server.proxy`** 把 **`VITE_APP_BASE_API`**（如 `/api/v1`）转发到上述后端。
 3. 若页面提示「连接被拒绝」，检查后端是否启动、端口是否一致，或把 **`VITE_API_BASE_URL`** 改成你的实际后端地址。
 

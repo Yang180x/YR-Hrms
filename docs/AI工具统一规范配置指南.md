@@ -7,7 +7,7 @@
 ## 文件结构
 
 ```
-fastapiadmin/
+YR-Hrms/
 ├── AGENTS.md                          ← 全局唯一核心规范
 ├── CLAUDE.md                          ← Claude Code / Cline / Windsurf 入口
 ├── .github/
@@ -79,7 +79,7 @@ fastapiadmin/
 
 ```markdown
 ---
-description: FastapiAdmin 全局通用开发规则
+description: YR-Hrms 全局通用开发规则
 globs: ["**/*.py", "**/*.vue", "**/*.ts", "**/*.dart"]
 ---
 
@@ -102,7 +102,7 @@ rules = ./AGENTS.md
 ### 3. 执行命令
 
 ```bash
-cd /Users/jerome/Developer/AI/fastapiadmin
+cd /Users/jerome/Developer/AI/YR-Hrms
 
 # Claude Code（如果使用软链接简化，不单独维护 CLAUDE.md）
 ln -sf AGENTS.md CLAUDE.md

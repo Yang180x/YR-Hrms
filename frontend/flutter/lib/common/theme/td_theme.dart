@@ -3,7 +3,7 @@ import 'package:tdesign_flutter/tdesign_flutter.dart';
 
 import 'colors.dart';
 
-/// FastapiAdmin TDesign 主题 — 用 `DesignColors` 构造 `TDThemeData`
+/// YR-Hrms TDesign 主题 — 用 `DesignColors` 构造 `TDThemeData`
 ///
 /// 打通 TDesign 组件与品牌主题：TDesign 组件只认 `TDThemeData`，Material 组件只认 `ThemeData`。
 /// 🔴 必须在 `main()` 调用 `TDTheme.needMultiTheme(true)`，并把 light/dark 注入
@@ -14,12 +14,12 @@ class AppTdTheme {
   static TDThemeData get tdThemeData {
     final base = TDThemeData.defaultData();
     final light = base.copyWithTDThemeData(
-      'fastapiadmin',
+      'YR-Hrms',
       colorMap: _lightColorMap,
       fontMap: _lightFontMap,
     );
     final dark = (base.dark ?? base).copyWithTDThemeData(
-      'fastapiadminDark',
+      'YR-HrmsDark',
       colorMap: _darkColorMap,
     );
     // 与 TDThemeData.fromJson 同款初始化：late light 需自引用，dark.light 指向浅色主题

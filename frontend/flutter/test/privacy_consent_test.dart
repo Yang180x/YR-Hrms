@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:fastapiadmin_mobile/common/utils/privacy_consent.dart';
-import 'package:fastapiadmin_mobile/services/index.dart';
+import 'package:yr_hrms_mobile/common/utils/privacy_consent.dart';
+import 'package:yr_hrms_mobile/services/index.dart';
 
 /// 隐私同意闸门回归测试 —— 锁死「用户同意前不采集个人信息」这条上架合规红线
 ///

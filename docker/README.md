@@ -74,7 +74,7 @@ bash deploy.sh image:export 3.1.0     # → docker/dist/backend-3.1.0.tar.gz + .
 `image:export` 结束时会打印需要 scp 的清单，服务器目录与之对应：
 
 ```
-~/fastapiadmin/
+~/YR-Hrms/
 ├── deploy.sh                       # 从仓库拷
 ├── docker-compose.backend.yaml     # 从 docker/ 拷
 ├── docker-compose.local-deps.yaml  # 从 docker/ 拷（仅本机缺 MySQL/Redis 时需要）
@@ -90,7 +90,7 @@ bash deploy.sh image:export 3.1.0     # → docker/dist/backend-3.1.0.tar.gz + .
 > `.env.prod.example`，紧接的 `cp env.prod.example env.prod` 就会报 `No such file`：
 >
 > ```bash
-> scp backend/env/.env.prod.example 用户@服务器:~/fastapiadmin/env.prod.example
+> scp backend/env/.env.prod.example 用户@服务器:~/YR-Hrms/env.prod.example
 > ```
 
 ```bash
@@ -163,7 +163,7 @@ bash ../deploy.sh cert:renew         # 建议 crontab: 0 3 * * 0
 | 编排离线解析 | `docker-compose -f … config -q` 四种组合（见下） | ✅ 四组均 exit 0 |
 | 缺配置响亮失败 | 删掉 `env.prod` 后再 `config -q` | ✅ 两组均 exit 1 + `env file … not found`（不是静默回落默认值） |
 | 构建上下文过滤 | `podman build -f /tmp/probe.Dockerfile -t probe-t7-ctx .` → `podman run --rm probe-t7-ctx sh -c 'find /probe …'` | ✅ 见 §构建上下文探针 |
-| 镜像自包含 | `podman run --rm localhost/fastapiadmin-backend:task0 sh -c 'ls -a /home'` | ✅ 见 §镜像自包含（用的是缓存镜像，**未**在本次重建） |
+| 镜像自包含 | `podman run --rm localhost/yr-hrms-backend:task0 sh -c 'ls -a /home'` | ✅ 见 §镜像自包含（用的是缓存镜像，**未**在本次重建） |
 | 镜像可启动 + 健康端点 | `podman run … -e DATABASE_TYPE=sqlite -e REDIS_ENABLE=false …` + `curl /common/health/` | ✅ 200（本机 arm64 仿真下约 22s 就绪） |
 
 > 冒烟用的参数是 `ENVIRONMENT=dev` + SQLite + 关 Redis，**不是** compose 的生产参数
@@ -194,7 +194,7 @@ podman build --pull=never -q -f /tmp/probe.Dockerfile -t probe-t7-ctx .
 ```
 
 `podman run` 实测：`/probe/env` 只有 `.env.example` 与 `.env.prod.example`（**无** `.env`）；
-`find /probe -name '*.db' -o -name '*.sqlite*'` **零命中** —— 而宿主 `backend/fastapiadmin.db` 确实存在，
+`find /probe -name '*.db' -o -name '*.sqlite*'` **零命中** —— 而宿主 `backend/YR-Hrms.db` 确实存在，
 说明 `backend/*.db` 规则真的在生效，不是「无对象可排除」；`/probe/.venv`、`/probe/logs` 也都不存在。
 
 > 探针镜像用的是临时 `alpine` 基底，只用来验证 `.dockerignore` 的过滤结果，不涉及 `docker/backend/Dockerfile` 本身。
@@ -202,14 +202,14 @@ podman build --pull=never -q -f /tmp/probe.Dockerfile -t probe-t7-ctx .
 
 #### 镜像自包含
 
-用的是 Task 0 缓存的镜像 `localhost/fastapiadmin-backend:task0`（2026-09-18 13:51 +0800 构建，
+用的是 Task 0 缓存的镜像 `localhost/yr-hrms-backend:task0`（2026-09-18 13:51 +0800 构建，
 `pyrate-limiter 4.5.0` 已装 → 是修复后的那份；本次**没有**重建，因为构建要数分钟）：
 
 ```bash
-podman run --rm localhost/fastapiadmin-backend:task0 sh -c 'ls -a /home; find /home -name ".env" -o -name "*.db"'
+podman run --rm localhost/yr-hrms-backend:task0 sh -c 'ls -a /home; find /home -name ".env" -o -name "*.db"'
 ```
 
-`/home` 下有 `app` `main.py` `requirements.txt` `static` 等；**没有** `.venv`、`logs`、`fastapiadmin.db`、`.env`。
+`/home` 下有 `app` `main.py` `requirements.txt` `static` 等；**没有** `.venv`、`logs`、`YR-Hrms.db`、`.env`。
 `python -c "import pyrate_limiter, fastapi_limiter"` → `import OK`。
 
 `dc55c58f..HEAD` 期间**只有** `backend/tests/test_docker_deploy_config.py` 变过；对镜像内

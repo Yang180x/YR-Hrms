@@ -1,6 +1,6 @@
-# FastapiAdmin v3.1.0 系统概述
+# YR-Hrms v3.1.0 系统概述
 
-FastapiAdmin 是一套全栈快速开发平台，包含 Web 管理后台、UniApp 小程序、Flutter 移动端。
+YR-Hrms 是一套全栈快速开发平台，包含 Web 管理后台、UniApp 小程序、Flutter 移动端。
 
 ## 技术栈
 

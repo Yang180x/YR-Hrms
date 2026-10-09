@@ -1,4 +1,4 @@
-# FastApiAdmin - Backend
+# YR-Hrms - Backend
 
 一个基于 FastAPI 框架构建企业级后端架构解决方案，为前端 Vue3 管理系统提供完整的 API 服务支持。
 
@@ -47,7 +47,7 @@
 ## 📁 项目结构
 
 ```txt
-FastapiAdmin/backend/
+YR-Hrms/backend/
 ├── 📁 app/                     # 项目核心代码
 │   ├── 💾 alembic/             # 数据库迁移管理
 │   ├── 📄 common/              # 公共组件（常量、枚举、响应封装）
@@ -126,7 +126,7 @@ OS 环境变量（最高）
 
 ### 数据库迁移命令（模型变更时使用）
 
-**初始化数据库**：导入 `sql/{mysql,postgres}/fastapiadmin_ddl.sql`，或直接启动
+**初始化数据库**：导入 `sql/{mysql,postgres}/yr_hrms_ddl.sql`，或直接启动
 由程序自动建表（首次启动同时写入种子数据）。历史迁移已全部并入上述初始化文件，
 `app/alembic/versions/` 当前为空（`upgrade` 为空操作）。
 

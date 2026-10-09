@@ -1,10 +1,10 @@
-# AGENTS — FastapiAdmin Flutter 移动端
+# AGENTS — YR-Hrms Flutter 移动端
 
 > 📖 **入口规范**：[AGENTS.md](../../AGENTS.md) | **项目概览**：[README.md](../../README.md)
 
 ## 项目概览
 
-Flutter 3.44 跨平台移动应用模板，FastApiAdmin 管理客户端。基于统一设计系统。
+Flutter 3.44 跨平台移动应用模板，YR-Hrms 管理客户端。基于统一设计系统。
 
 ## Default Port
 
@@ -12,7 +12,7 @@ Flutter Web: `http://127.0.0.1:6150`
 
 | 属性     | 值                                            |
 | -------- | --------------------------------------------- |
-| 项目名   | fastapiadmin_mobile                           |
+| 项目名   | yr_hrms_mobile                           |
 | 入口     | `lib/main.dart`                               |
 | 框架     | Flutter 3.44.4 / Dart 3.12.2                  |
 | 代码量   | ~60 Dart 文件                                 |
@@ -99,7 +99,7 @@ lib/common/style/
 
 ```dart
 // 引入设计系统
-import 'package:fastapiadmin_mobile/common/style/index.dart';
+import 'package:yr_hrms_mobile/common/style/index.dart';
 // 或从 lib 层级的相对路径
 import '../../common/style/index.dart';
 ```

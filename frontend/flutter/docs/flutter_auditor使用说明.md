@@ -1,6 +1,6 @@
 # flutter_auditor 使用说明
 
-> 面向 FastapiAdmin Flutter 移动端（`frontend/flutter/`）的 `flutter_auditor` 审计工具使用指南。
+> 面向 YR-Hrms Flutter 移动端（`frontend/flutter/`）的 `flutter_auditor` 审计工具使用指南。
 > 关联实施计划：`docs/superpowers/plans/2026-07-31-flutter-auditor-managed-check.md`
 
 ## 简介

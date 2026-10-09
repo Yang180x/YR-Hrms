@@ -56,7 +56,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
               children: [
                 const Spacer(flex: 3),
                 Text(
-                  'FastapiAdmin',
+                  'YR-Hrms',
                   style: DesignTextStyle.display.copyWith(color: Colors.white),
                 ),
                 SizedBox(height: DesignSize.spaceSm.h),

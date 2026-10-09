@@ -1,6 +1,6 @@
-/// FastapiAdmin 设计系统 — barrel export
+/// YR-Hrms 设计系统 — barrel export
 ///
-/// 统一引入：import 'package:fastapiadmin_mobile/common/theme/index.dart';
+/// 统一引入：import 'package:yr_hrms_mobile/common/theme/index.dart';
 library;
 
 export 'colors.dart';

@@ -1,8 +1,8 @@
--- FastapiAdmin DDL — 2026-09-22
--- 使用方式: mysql -u root -p < fastapiadmin_ddl.sql
+-- YR-Hrms DDL — 2026-09-22
+-- 使用方式: mysql -u root -p < yr_hrms_ddl.sql
 
-CREATE DATABASE IF NOT EXISTS `fastapiadmin` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `fastapiadmin`;
+CREATE DATABASE IF NOT EXISTS `yr_hrms` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `yr_hrms`;
 
 DROP TABLE IF EXISTS sys_user_positions;
 DROP TABLE IF EXISTS gen_table_column;

@@ -1,5 +1,5 @@
 {
-  "name": "fastapiadmin",
+  "name": "yr-hrms-web",
   "description": "Vue3 + Vite + TypeScript + Element-Plus 的后台管理模板",
   "version": "3.1.0",
   "private": true,
@@ -189,12 +189,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/fastapiadmin/FastapiAdmin.git"
+    "url": "https://github.com/Yang180x/YR-Hrms.git"
   },
   "bugs": {
-    "url": "https://gitee.com/fastapiadmin/FastapiAdmin/issues"
+    "url": "https://github.com/Yang180x/YR-Hrms/issues"
   },
-  "author": "fastapiadmin <948080782@qq.com>",
+  "author": "YR-Hrms <948080782@qq.com>",
   "license": "MIT",
-  "homepage": "https://gitee.com/fastapiadmin/FastapiAdmin"
+  "homepage": "https://github.com/Yang180x/YR-Hrms"
 }

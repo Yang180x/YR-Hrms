@@ -1,5 +1,5 @@
-name: fastapiadmin_mobile
-description: "FastapiAdmin Flutter 移动端客户端"
+name: yr_hrms_mobile
+description: "YR-Hrms Flutter 移动端客户端"
 publish_to: "none"
 
 # 仅作构建兜底（无 --dart-define=ENV 时使用）；正常构建版本号由 lib/env/.env.<ENV> 的 APP_VERSION/APP_BUILD 决定
@@ -80,7 +80,7 @@ flutter:
   generate: true
   uses-material-design: true
   assets:
-    - assets/images/fastapiadmin_logo.png
+    - assets/images/yr_hrms_logo.png
     - lib/env/.env.dev
     - lib/env/.env.prod
     - lib/env/.env.test

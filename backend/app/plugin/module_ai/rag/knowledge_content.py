@@ -72,7 +72,7 @@ async def load_system_knowledge(knowledge: Knowledge) -> None:
 
         await knowledge.ainsert(
             name=name,
-            description=f"FastapiAdmin 系统文档：{name}",
+            description=f"YR-Hrms 系统文档：{name}",
             text_content=content,
         )
         log.info(f"✅ 已加载文档: {name}")

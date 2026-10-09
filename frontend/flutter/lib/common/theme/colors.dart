@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// FastapiAdmin 设计系统 — 色彩令牌
+/// YR-Hrms 设计系统 — 色彩令牌
 ///
 /// 所有色值统一在此定义，页面代码禁止硬编码 Color(0xFF...)。
 abstract final class DesignColors {

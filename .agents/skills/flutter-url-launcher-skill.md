@@ -1,11 +1,11 @@
 ---
 name: flutter-url-launcher-best-practices
-description: Use when FastapiAdmin Flutter 移动端使用 url_launcher 打开链接/拨号/地图导航，出现 canLaunchUrl+launchUrl 反模式，或需要配置 iOS LSApplicationQueriesSchemes / Android <queries> 平台白名单
+description: Use when YR-Hrms Flutter 移动端使用 url_launcher 打开链接/拨号/地图导航，出现 canLaunchUrl+launchUrl 反模式，或需要配置 iOS LSApplicationQueriesSchemes / Android <queries> 平台白名单
 ---
 
 # Flutter url_launcher 最佳实践
 
-> 适用项目：fastapiadmin_mobile（FastapiAdmin Flutter 移动端）
+> 适用项目：yr_hrms_mobile（YR-Hrms Flutter 移动端）
 
 ## Overview
 

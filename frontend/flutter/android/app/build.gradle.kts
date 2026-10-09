@@ -35,17 +35,17 @@ if (envVersionFile.exists()) {
 }
 val envVersionName = envVersionProps.getProperty("APP_VERSION")?.trim()
 val envVersionCode = envVersionProps.getProperty("APP_BUILD")?.trim()?.toIntOrNull()
-// 产物名前缀：优先取 .env 的 APP_NAME，缺失/为空时回退 fastapiadmin
-val envAppName = envVersionProps.getProperty("APP_NAME")?.trim()?.takeIf { it.isNotEmpty() } ?: "fastapiadmin"
+// 产物名前缀：优先取 .env 的 APP_NAME，缺失/为空时回退 YR-Hrms
+val envAppName = envVersionProps.getProperty("APP_NAME")?.trim()?.takeIf { it.isNotEmpty() } ?: "YR-Hrms"
 
 // 产物文件名（对齐原生 Android applicationVariants.outputs.all 控制方式）：
 // 按 APP_NAME-<APP_VERSION>-<APP_BUILD> 原顺序拼接，末尾追加构建类型后缀
 // → <APP_NAME>-<APP_VERSION>-<APP_BUILD>-<BUILD_TYPE>.apk
-// 如 dev: FastapiAdmin-3.0.0-alpha-301-release.apk / -debug.apk；prod: FastapiAdmin-3.0.0-300-release.apk
+// 如 dev: YR-Hrms-3.0.0-alpha-301-release.apk / -debug.apk；prod: YR-Hrms-3.0.0-300-release.apk
 val apkFileBaseName = "${envAppName}-${envVersionName ?: "1.0.0"}-${envVersionCode ?: 1}"
 
 android {
-    namespace = "com.fastapiadmin.fastapiadmin_mobile"
+    namespace = "com.yrhrms.yr_hrms_mobile"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -56,7 +56,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.fastapiadmin.fastapiadmin_mobile"
+        applicationId = "com.yrhrms.yr_hrms_mobile"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

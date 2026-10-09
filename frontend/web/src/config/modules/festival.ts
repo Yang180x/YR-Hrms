@@ -77,7 +77,7 @@ export const festivalConfigList: FestivalConfig[] = [
   //   image: yd,
   //   count: 3,
   //   scrollText:
-  //     "🎉 五月快乐！FastAPI Admin 祝您工作顺利、迭代顺利。本月请关注备份与安全策略，遇到问题可先查看文档或联系运维。",
+  //     "🎉 五月快乐！YR-Hrms 祝您工作顺利、迭代顺利。本月请关注备份与安全策略，遇到问题可先查看文档或联系运维。",
   // },
 
   /** 单日示例（圣诞节）：需取消注释并确保已 import 雪花图 */

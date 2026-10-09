@@ -7,7 +7,7 @@ import '../theme/index.dart';
 ///
 /// 抽取自各页面散落的 `TDCellStyle.cellStyle(context)..padding=...` + 自定义箭头：
 /// - **高度自适应（默认 null）**：cell 高度 = padding + 内容自然高度 —— 16sp 基础字号单行
-///   自然 48dp（对齐 FastapiAdmin 4px 体系）；多行/长内容自适应撑高，杜绝固定高度溢出。
+///   自然 48dp（对齐 YR-Hrms 4px 体系）；多行/长内容自适应撑高，杜绝固定高度溢出。
 ///   特例（头像行等）显式传 height 固定
 /// - **紧凑行 padding**：垂直 padding s12（内容区 = 高度-24；动态高度下由内容自然撑起，无溢出）
 /// - **行 padding 唯一出口**：水平 `DesignSize.spaceLg` + 垂直 `DesignSize.spaceMd`（统一视觉），

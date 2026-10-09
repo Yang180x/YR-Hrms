@@ -1,6 +1,6 @@
-# fastapiadmin_mobile
+# yr_hrms_mobile
 
-FastapiAdmin Flutter 移动端管理系统客户端，基于 Flutter 3.44 跨平台开发。
+YR-Hrms Flutter 移动端管理系统客户端，基于 Flutter 3.44 跨平台开发。
 
 ## 功能模块
 

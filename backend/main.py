@@ -9,7 +9,7 @@ from fastapi import FastAPI
 
 from app.common.enums import EnvironmentEnum
 
-fastapiadmin_cli = typer.Typer()
+yr_hrms_cli = typer.Typer()
 alembic_cfg = Config("alembic.ini")
 
 
@@ -57,9 +57,9 @@ def create_app() -> FastAPI:
 
 
 # typer.Option是非必填；typer.Argument是必填
-@fastapiadmin_cli.command(
+@yr_hrms_cli.command(
     name="run",
-    help="启动 FastapiAdmin 服务, 运行 python main.py run --env=dev 不加参数默认 dev 环境",
+    help="启动 YR-Hrms 服务, 运行 python main.py run --env=dev 不加参数默认 dev 环境",
 )
 def run(
     env: Annotated[
@@ -111,7 +111,7 @@ def run(
         cleanup_logging()
 
 
-@fastapiadmin_cli.command(
+@yr_hrms_cli.command(
     name="revision",
     help="生成新的 Alembic 迁移脚本, 运行 python main.py revision --env=dev",
 )
@@ -137,7 +137,7 @@ def revision(
     typer.echo("迁移脚本已生成")
 
 
-@fastapiadmin_cli.command(
+@yr_hrms_cli.command(
     name="upgrade",
     help="应用最新的 Alembic 迁移, 运行 python main.py upgrade --env=dev",
 )
@@ -163,7 +163,7 @@ def upgrade(
     typer.echo("所有迁移已应用。")
 
 
-@fastapiadmin_cli.command(
+@yr_hrms_cli.command(
     name="reset-passwords",
     help="重置所有用户密码为默认值（用于国密迁移后强制重置）, 运行 python main.py reset-passwords --env=dev --default-pwd=123456",
 )
@@ -228,4 +228,4 @@ def reset_passwords(
 
 
 if __name__ == "__main__":
-    fastapiadmin_cli()
+    yr_hrms_cli()

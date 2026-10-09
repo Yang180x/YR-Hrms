@@ -23,7 +23,7 @@ services:
   # ==================== 后端服务 ====================
   backend:
     container_name: backend
-    image: fastapiadmin-backend:${IMAGE_TAG:-3.1.0}
+    image: yr-hrms-backend:${IMAGE_TAG:-3.1.0}
     restart: unless-stopped
     platform: linux/amd64
     environment:

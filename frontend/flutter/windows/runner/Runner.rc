@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.fastapiadmin" "\0"
-            VALUE "FileDescription", "fastapiadmin_mobile" "\0"
+            VALUE "CompanyName", "com.yrhrms" "\0"
+            VALUE "FileDescription", "YR-Hrms" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "fastapiadmin_mobile" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 com.fastapiadmin. All rights reserved." "\0"
-            VALUE "OriginalFilename", "fastapiadmin_mobile.exe" "\0"
-            VALUE "ProductName", "fastapiadmin_mobile" "\0"
+            VALUE "InternalName", "yr_hrms_mobile" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 com.yrhrms. All rights reserved." "\0"
+            VALUE "OriginalFilename", "yr_hrms_mobile.exe" "\0"
+            VALUE "ProductName", "YR-Hrms" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -23,7 +23,7 @@ class AppEnv {
       dotenv.get('API_BASE_URL', fallback: 'http://127.0.0.1:6100');
 
   /// App 名称
-  static String get appName => dotenv.get('APP_NAME', fallback: 'FastapiAdmin');
+  static String get appName => dotenv.get('APP_NAME', fallback: 'YR-Hrms');
 
   /// App 版本号（Flutter 端使用 dotenv；Android 端由 gradle 读同一份 .env 写入 versionName，天然一致）
   static String get appVersion => dotenv.get('APP_VERSION', fallback: '1.0.0');

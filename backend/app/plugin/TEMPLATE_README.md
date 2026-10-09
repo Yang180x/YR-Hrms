@@ -656,10 +656,10 @@ docker logs backend --tail 50
 
 # 查看菜单数据
 cd /path/to/project/docker
-docker compose exec mysql mysql -u root -pfastapiadmin_root fastapiadmin \
+docker compose exec mysql mysql -u root -pYR-Hrms_root YR-Hrms \
   -e "SELECT id, name, route_path, type FROM sys_menu WHERE type=1 ORDER BY \`order\`;"
 
 # 重新关联角色权限（清空菜单后需执行）
-docker compose exec mysql mysql -u root -pfastapiadmin_root fastapiadmin \
+docker compose exec mysql mysql -u root -pYR-Hrms_root YR-Hrms \
   -e "INSERT IGNORE INTO sys_role_menus (role_id, menu_id) SELECT 1, id FROM sys_menu;"
 ```

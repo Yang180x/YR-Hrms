@@ -1,8 +1,8 @@
--- FastapiAdmin DDL — PostgreSQL
--- 用法: psql -U postgres -f fastapiadmin_ddl.sql
+-- YR-Hrms DDL — PostgreSQL
+-- 用法: psql -U postgres -f yr_hrms_ddl.sql
 
--- CREATE DATABASE fastapiadmin WITH ENCODING 'UTF8';
-\c fastapiadmin
+-- CREATE DATABASE yr_hrms WITH ENCODING 'UTF8';
+\c yr_hrms
 
 DROP TABLE IF EXISTS sys_user_positions;
 DROP TABLE IF EXISTS gen_table_column;

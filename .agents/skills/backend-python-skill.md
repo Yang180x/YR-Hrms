@@ -1,10 +1,10 @@
 ---
-name: fastapi-admin
+name: yr-hrms-backend
 description: "FastAPI + SQLAlchemy + MySQL/PostgreSQL 后端开发。关键词：FastAPI、SQLAlchemy、RBAC、CRUD、Alembic、JWT、Redis。适用于开发 RESTful API、数据库模型、权限管理、定时任务、工作流编排。"
 argument-hint: "API 开发、模型设计、路由注册、权限配置"
 ---
 
-# FastAPI Admin 后端工程模板技术文档
+# YR-Hrms 后端工程模板技术文档
 
 > 基于 FastAPI + SQLAlchemy + MySQL/PostgreSQL 的企业级管理后端快速开发模板。
 > 适用于 SaaS 管理后台、电商系统、CRM、ERP 等需要 RBAC 权限管理和动态模块化的后端项目。

@@ -1,5 +1,5 @@
 ---
-description: FastapiAdmin 全局通用开发规则
+description: YR-Hrms 全局通用开发规则
 globs: ["**/*.py", "**/*.vue", "**/*.ts", "**/*.dart"]
 ---
 所有代码生成完全遵循 @AGENTS.md 中定义的全栈开发标准，不同端代码禁止混用其他技术栈语法。

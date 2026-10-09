@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// FastapiAdmin 设计系统 — 尺寸/圆角/投影令牌
+/// YR-Hrms 设计系统 — 尺寸/圆角/投影令牌
 abstract final class DesignSize {
   DesignSize._();
 

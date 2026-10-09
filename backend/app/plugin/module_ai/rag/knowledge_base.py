@@ -22,8 +22,8 @@ def get_knowledge(vector_db: Any | None = None) -> Knowledge:
         vector_db = get_vector_db()
 
     kb = Knowledge(
-        name="FastapiAdmin 系统知识库",
-        description="FastapiAdmin 管理后台系统的操作指南、功能说明和使用文档",
+        name="YR-Hrms 系统知识库",
+        description="YR-Hrms 管理后台系统的操作指南、功能说明和使用文档",
         vector_db=vector_db,
         max_results=5,
     )

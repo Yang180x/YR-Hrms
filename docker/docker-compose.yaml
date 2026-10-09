@@ -1,5 +1,5 @@
 # ============================================
-# FastapiAdmin Docker Compose 配置文件（方式 A：全套）
+# YR-Hrms Docker Compose 配置文件（方式 A：全套）
 # ============================================
 # 使用方式（在 docker/ 目录下）：
 #   docker compose --env-file .env up -d
@@ -21,8 +21,8 @@ services:
     environment:
       TZ: "Asia/Shanghai"
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:?错误: 请设置 MYSQL_ROOT_PASSWORD 环境变量}"
-      MYSQL_DATABASE: "${MYSQL_DATABASE:-fastapiadmin}"
-      MYSQL_USER: "${MYSQL_USER:-fastapiadmin}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE:-yr_hrms}"
+      MYSQL_USER: "${MYSQL_USER:-yr_hrms}"
       MYSQL_PASSWORD: "${MYSQL_PASSWORD:?错误: 请设置 MYSQL_PASSWORD 环境变量}"
     ports:
       # 只绑回环：backend 容器通过 Docker 网络直连，宿主机端口仅供本地调试
@@ -98,7 +98,7 @@ services:
     build:
       context: ../
       dockerfile: ./docker/backend/Dockerfile
-    image: fastapiadmin-backend:${IMAGE_TAG:-3.1.0}
+    image: yr-hrms-backend:${IMAGE_TAG:-3.1.0}
     restart: unless-stopped
     platform: linux/amd64
     environment:
@@ -108,8 +108,8 @@ services:
       DATABASE_HOST: "mysql"
       DATABASE_PASSWORD: "${MYSQL_PASSWORD}"
       DATABASE_PORT: "3306"
-      DATABASE_NAME: "${MYSQL_DATABASE:-fastapiadmin}"
-      DATABASE_USER: "${MYSQL_USER:-fastapiadmin}"
+      DATABASE_NAME: "${MYSQL_DATABASE:-yr_hrms}"
+      DATABASE_USER: "${MYSQL_USER:-yr_hrms}"
       REDIS_HOST: "redis"
       REDIS_PASSWORD: "${REDIS_PASSWORD}"
       REDIS_PORT: "6379"

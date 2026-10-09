@@ -297,7 +297,7 @@ cmd_image_export() {
   check_compose_env
 
   local tag="${1:-${IMAGE_TAG_DEFAULT}}"
-  local image="fastapiadmin-backend:${tag}"
+  local image="yr-hrms-backend:${tag}"
   local dist="${COMPOSE_DIR}/dist"
   local tar_file="${dist}/backend-${tag}.tar.gz"
 
@@ -340,7 +340,7 @@ cmd_image_export() {
   echo "  下一步（在 docker/ 目录执行）:"
   echo "    scp ${tar_file} ${tar_file}.sha256 \\"
   echo "        docker-compose.backend.yaml docker-compose.local-deps.yaml \\"
-  echo "        .env.example 用户@服务器:~/fastapiadmin/"
+  echo "        .env.example 用户@服务器:~/YR-Hrms/"
   echo "    另需把 ${ENV_PROD_TEMPLATE} 拷成服务器上的 env.prod（填 DATABASE_HOST 等）"
 }
 
@@ -381,7 +381,7 @@ cmd_image_load() {
   gunzip -c "${tar_file}" | docker load
   echo ""
   echo "  → 已加载镜像:"
-  docker image ls fastapiadmin-backend
+  docker image ls yr-hrms-backend
   echo ""
   echo "  下一步: bash deploy.sh db:migrate && bash deploy.sh start"
 }

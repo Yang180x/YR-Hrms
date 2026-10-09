@@ -1,4 +1,4 @@
-# FastapiAdmin Flutter 移动端 — 设计规范
+# YR-Hrms Flutter 移动端 — 设计规范
 
 > 基于 Flutter 3.44 + Material Design 3，统一设计语言。
 >
@@ -12,7 +12,7 @@
 ## 1. 色彩系统
 
 ```dart
-import 'package:fastapiadmin_mobile/common/style/index.dart';
+import 'package:yr_hrms_mobile/common/style/index.dart';
 ```
 
 ### 品牌色
@@ -151,7 +151,7 @@ Text('正文', style: DesignTextStyle.bodyOf(context));  // 从 Theme 读取
 ## 7. 组件装饰器工厂
 
 ```dart
-import 'package:fastapiadmin_mobile/common/style/index.dart';
+import 'package:yr_hrms_mobile/common/style/index.dart';
 ```
 
 `DesignDecoration` 提供快速构建常见容器样式：
@@ -209,7 +209,7 @@ SafeArea
 
 ```dart
 // 统一引入
-import 'package:fastapiadmin_mobile/common/style/index.dart';
+import 'package:yr_hrms_mobile/common/style/index.dart';
 
 // ── 色彩 ──
 Container(color: DesignColors.background);

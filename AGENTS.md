@@ -1,4 +1,4 @@
-# FastapiAdmin — 全栈开发框架模板
+# YR-Hrms — 全栈开发框架模板
 
 FastAPI + Vue3 + UniApp + Docker 全栈开发框架模板。
 

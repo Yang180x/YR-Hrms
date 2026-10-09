@@ -160,7 +160,7 @@ watch(
     <!-- 推荐服务 -->
     <wd-card type="rectangle" title="推荐服务">
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
-        <wd-cell title="项目官网" is-link @click="openUrl('https://service.fastapiadmin.com/')" />
+        <wd-cell title="项目官网" is-link @click="openUrl('https://github.com/Yang180x/YR-Hrms')" />
         <wd-cell title="问题反馈" is-link @click="navigateTo('feedback')" />
         <wd-cell title="个人资料" is-link @click="navigateTo('profile')" />
         <wd-cell title="账号设置" is-link @click="navigateTo('account')" />

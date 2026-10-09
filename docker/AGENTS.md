@@ -29,7 +29,7 @@ docker/
 | ------- | --------------------- | ------- | -------------------------- |
 | MySQL   | mysql:8.0             | 3306    | 业务数据库                 |
 | Redis   | redis:7-alpine        | 6379    | 缓存/会话                  |
-| Backend | fastapiadmin-backend  | 6100    | FastAPI 应用（容器内 6100）|
+| Backend | yr-hrms-backend  | 6100    | FastAPI 应用（容器内 6100）|
 | Nginx   | nginx:1.25-alpine     | 80/443  | 反向代理 + 静态资源        |
 
 方式 B 只有 Backend 一个服务，见 `docker-compose.backend.yaml`。

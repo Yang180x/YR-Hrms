@@ -18,7 +18,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 DOCKER_DIR = REPO_ROOT / "docker"
 CONTAINER_PORT = "6100"
 LEGACY_PORT = "8001"
-IMAGE_REF = "fastapiadmin-backend:${IMAGE_TAG:-3.1.0}"
+IMAGE_REF = "yr-hrms-backend:${IMAGE_TAG:-3.1.0}"
 
 COMPOSE_FULL = DOCKER_DIR / "docker-compose.yaml"
 COMPOSE_DEV = DOCKER_DIR / "docker-compose.dev.yaml"
