@@ -1,5 +1,21 @@
 # YR-Hrms — 全栈开发框架模板
 
+<!-- CODEGRAPH_START -->
+## CodeGraph
+
+本项目已使用 CodeGraph 建立代码索引（`.codegraph/`）。理解或定位代码时，优先使用
+`codegraph_explore` MCP 工具或 `codegraph explore "符号名或问题"`，再按需使用文本搜索。
+
+- 查看索引状态：`codegraph status`
+- 查询符号：`codegraph query create_app`
+- 阅读源码与调用路径：`codegraph explore "create_app lifespan create_tables"`
+- 增量同步：`codegraph sync`
+- 完整重建：`codegraph index .`
+
+索引数据库、后台进程文件和日志仅保存在本机，不提交到 Git。
+克隆项目后执行 `codegraph init .` 创建本地索引。
+<!-- CODEGRAPH_END -->
+
 FastAPI + Vue3 + UniApp + Docker 全栈开发框架模板。
 
 > 📖 **项目结构详情见 [README.md](./README.md#-工程结构)**，本文档仅包含 Agent 开发所需的快捷参考。
