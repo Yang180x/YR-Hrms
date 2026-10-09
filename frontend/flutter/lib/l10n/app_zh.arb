@@ -1,0 +1,183 @@
+{
+  "@@locale": "zh",
+
+  "appName": "FastapiAdmin",
+  "appSubtitle": "移动端管理系统",
+
+  "commonSave": "保存",
+  "commonCancel": "取消",
+  "commonConfirm": "确定",
+  "commonDialogTitle": "提示",
+  "commonFeatureDeveloping": "功能开发中",
+  "commonCacheCleared": "缓存已清除",
+  "commonSubmitting": "提交中...",
+
+  "loginTitle": "登录",
+  "loginSubtitle": "移动端管理系统",
+  "loginPwdTab": "密码登录",
+  "loginSubHint": "请输入账号和密码登录系统",
+  "loginUsername": "账号",
+  "loginUsernameHint": "请输入账号",
+  "loginUsernameRequired": "请输入用户名",
+  "loginPassword": "密码",
+  "loginPasswordHint": "请输入密码",
+  "loginBtn": "登  录",
+  "loginLoading": "登录中...",
+  "loginSuccess": "登录成功",
+  "loginNetworkError": "网络异常: {message}",
+  "@loginNetworkError": {
+    "description": "登录网络异常提示，含具体错误",
+    "placeholders": {
+      "message": {
+        "type": "String",
+        "example": "连接超时"
+      }
+    }
+  },
+
+  "tabHome": "首页",
+  "tabWork": "工作台",
+  "tabMine": "我的",
+
+  "noticeContent": "通知公告: fastapp 是一个基于 Vue3 + UniApp 的前端模板项目，提供了一套完整的前端解决方案",
+  "statVisitors": "访客数",
+  "statViews": "浏览量",
+
+  "workTitleUser": "用户管理",
+  "workTitleRole": "角色管理",
+  "workTitleNotice": "通知公告",
+  "workTitleDept": "部门管理",
+  "workTitlePosition": "岗位管理",
+  "workTitleMenu": "菜单管理",
+  "workTitleDict": "字典管理",
+  "workTitleParams": "参数管理",
+  "workTitleLog": "日志管理",
+  "workTitleConfig": "系统配置",
+
+  "mineTools": "常用工具",
+  "mineServices": "推荐服务",
+  "mineProfile": "个人资料",
+  "mineSettings": "设置",
+  "mineAbout": "关于",
+  "mineOfficialSite": "项目官网",
+  "mineFeedback": "问题反馈",
+  "mineAccount": "账号设置",
+  "mineLogout": "退出登录",
+  "mineLogoutSuccess": "退出成功",
+  "mineConfirmLogout": "确定要退出登录吗？",
+  "mineNotLoggedIn": "未登录用户",
+  "mineLoginHint": "登录后查看更多信息",
+
+  "profileTitle": "个人资料",
+  "profileSaveSuccess": "保存成功",
+  "profileBasic": "基本信息",
+  "profileAccount": "账号",
+  "profileName": "姓名",
+  "profileNameHint": "请输入姓名",
+  "profilePhone": "手机号",
+  "profilePhoneHint": "请输入手机号",
+  "profileEmail": "邮箱",
+  "profileEmailHint": "请输入邮箱",
+  "profileOrg": "组织信息",
+  "profileDept": "部门",
+  "profilePosition": "岗位",
+  "profileRole": "角色",
+  "profileLoginInfo": "登录信息",
+  "profileLastLogin": "最近登录时间",
+  "profileCameraPermissionDesc": "我们需要使用相机来拍摄头像。",
+  "profileGalleryPermissionDesc": "我们需要访问您的相册来选择头像图片。",
+
+  "settingsGeneral": "通用",
+  "settingsNotifications": "通知设置",
+  "settingsLanguage": "语言设置",
+  "settingsLanguageSystem": "跟随系统",
+  "settingsLanguageZh": "中文",
+  "settingsLanguageEn": "English",
+  "settingsClearCache": "清除缓存",
+  "settingsVersion": "版本信息",
+  "settingsAgreement": "用户协议",
+  "settingsPrivacy": "隐私政策",
+
+  "accountTitle": "账号设置",
+  "accountChangePwd": "修改密码",
+  "accountCurPwd": "当前密码",
+  "accountCurPwdRequired": "请输入当前密码",
+  "accountNewPwd": "新密码",
+  "accountNewPwdRequired": "请输入新密码",
+  "accountPwdTooShort": "密码不能少于6位",
+  "accountConfirmPwd": "确认新密码",
+  "accountConfirmPwdRequired": "请确认新密码",
+  "accountPwdMismatch": "两次密码不一致",
+  "accountConfirmChange": "确认修改",
+  "accountChangeSuccess": "密码修改成功，请重新登录",
+
+  "feedbackTitle": "问题反馈",
+  "feedbackType": "反馈类型",
+  "feedbackContent": "反馈内容 *",
+  "feedbackContentHint": "请详细描述您遇到的问题或建议，我们将认真阅读并改进...",
+  "feedbackContact": "联系方式（选填）",
+  "feedbackContactHint": "邮箱或手机号，方便我们回复",
+  "feedbackSubmit": "提交反馈",
+  "feedbackContentEmpty": "请填写反馈内容",
+  "feedbackThanks": "感谢您的反馈！",
+  "feedbackTypeBug": "功能异常",
+  "feedbackTypeUi": "界面问题",
+  "feedbackTypePerf": "性能问题",
+  "feedbackTypeSuggestion": "功能建议",
+  "feedbackTypeOther": "其他",
+
+  "workListTotal": "共 {total} 条记录",
+  "@workListTotal": {
+    "description": "列表总条数",
+    "placeholders": {
+      "total": {
+        "type": "int",
+        "example": "100"
+      }
+    }
+  },
+  "workLoadFailed": "加载失败，请重试",
+  "workRetry": "重新加载",
+  "workEmpty": "暂无数据",
+  "workStatusNormal": "正常",
+  "workStatusDisabled": "停用",
+  "workPlaceholderComing": "{title} 模块即将上线",
+  "@workPlaceholderComing": {
+    "description": "占位页提示：模块即将上线",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "菜单管理"
+      }
+    }
+  },
+
+  "colUsername": "登录账号",
+  "colName": "姓名",
+  "colPhone": "手机号",
+  "colDept": "部门",
+  "colStatus": "状态",
+  "colRoleName": "角色名称",
+  "colRoleCode": "角色编码",
+  "colSort": "排序",
+  "colRemark": "备注",
+  "colTitle": "标题",
+  "colType": "类型",
+  "colPublisher": "发布人",
+  "colPublishTime": "发布时间",
+  "colDeptName": "部门名称",
+  "colDeptCode": "部门编码",
+  "colPositionName": "岗位名称",
+  "colPositionCode": "岗位编码",
+
+  "splashSubtitle": "移动端",
+  "splashSkip": "跳过 {count}",
+  "@splashSkip": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  }
+}

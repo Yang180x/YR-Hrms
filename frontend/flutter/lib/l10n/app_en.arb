@@ -1,0 +1,183 @@
+{
+  "@@locale": "en",
+
+  "appName": "FastapiAdmin",
+  "appSubtitle": "Mobile Management System",
+
+  "commonSave": "Save",
+  "commonCancel": "Cancel",
+  "commonConfirm": "OK",
+  "commonDialogTitle": "Notice",
+  "commonFeatureDeveloping": "Under development",
+  "commonCacheCleared": "Cache cleared",
+  "commonSubmitting": "Submitting...",
+
+  "loginTitle": "Sign in",
+  "loginSubtitle": "Mobile Management System",
+  "loginPwdTab": "Password Login",
+  "loginSubHint": "Enter your account and password",
+  "loginUsername": "Account",
+  "loginUsernameHint": "Enter account",
+  "loginUsernameRequired": "Please enter username",
+  "loginPassword": "Password",
+  "loginPasswordHint": "Enter password",
+  "loginBtn": "Sign In",
+  "loginLoading": "Signing in...",
+  "loginSuccess": "Login successful",
+  "loginNetworkError": "Network error: {message}",
+  "@loginNetworkError": {
+    "description": "Login network error with detail message",
+    "placeholders": {
+      "message": {
+        "type": "String",
+        "example": "connection timeout"
+      }
+    }
+  },
+
+  "tabHome": "Home",
+  "tabWork": "Workbench",
+  "tabMine": "Mine",
+
+  "noticeContent": "Notice: fastapp is a frontend template project built on Vue3 + UniApp, providing a complete frontend solution.",
+  "statVisitors": "Visitors",
+  "statViews": "Page Views",
+
+  "workTitleUser": "Users",
+  "workTitleRole": "Roles",
+  "workTitleNotice": "Notices",
+  "workTitleDept": "Departments",
+  "workTitlePosition": "Positions",
+  "workTitleMenu": "Menus",
+  "workTitleDict": "Dictionaries",
+  "workTitleParams": "Parameters",
+  "workTitleLog": "Logs",
+  "workTitleConfig": "Settings",
+
+  "mineTools": "Tools",
+  "mineServices": "Services",
+  "mineProfile": "Profile",
+  "mineSettings": "Settings",
+  "mineAbout": "About",
+  "mineOfficialSite": "Official Site",
+  "mineFeedback": "Feedback",
+  "mineAccount": "Account",
+  "mineLogout": "Log out",
+  "mineLogoutSuccess": "Logged out",
+  "mineConfirmLogout": "Are you sure you want to log out?",
+  "mineNotLoggedIn": "Not logged in",
+  "mineLoginHint": "Sign in to see more",
+
+  "profileTitle": "Profile",
+  "profileSaveSuccess": "Saved successfully",
+  "profileBasic": "Basic Info",
+  "profileAccount": "Account",
+  "profileName": "Name",
+  "profileNameHint": "Enter name",
+  "profilePhone": "Phone",
+  "profilePhoneHint": "Enter phone",
+  "profileEmail": "Email",
+  "profileEmailHint": "Enter email",
+  "profileOrg": "Organization",
+  "profileDept": "Department",
+  "profilePosition": "Position",
+  "profileRole": "Roles",
+  "profileLoginInfo": "Login Info",
+  "profileLastLogin": "Last Login",
+  "profileCameraPermissionDesc": "We need camera access to take a profile photo.",
+  "profileGalleryPermissionDesc": "We need gallery access to choose a profile photo.",
+
+  "settingsGeneral": "General",
+  "settingsNotifications": "Notifications",
+  "settingsLanguage": "Language",
+  "settingsLanguageSystem": "Follow System",
+  "settingsLanguageZh": "中文",
+  "settingsLanguageEn": "English",
+  "settingsClearCache": "Clear Cache",
+  "settingsVersion": "Version",
+  "settingsAgreement": "User Agreement",
+  "settingsPrivacy": "Privacy Policy",
+
+  "accountTitle": "Account",
+  "accountChangePwd": "Change Password",
+  "accountCurPwd": "Current Password",
+  "accountCurPwdRequired": "Please enter current password",
+  "accountNewPwd": "New Password",
+  "accountNewPwdRequired": "Please enter new password",
+  "accountPwdTooShort": "Password must be at least 6 characters",
+  "accountConfirmPwd": "Confirm New Password",
+  "accountConfirmPwdRequired": "Please confirm new password",
+  "accountPwdMismatch": "Passwords do not match",
+  "accountConfirmChange": "Confirm Change",
+  "accountChangeSuccess": "Password changed, please sign in again",
+
+  "feedbackTitle": "Feedback",
+  "feedbackType": "Type",
+  "feedbackContent": "Content *",
+  "feedbackContentHint": "Describe the issue or suggestion in detail; we will review and improve...",
+  "feedbackContact": "Contact (optional)",
+  "feedbackContactHint": "Email or phone so we can reply",
+  "feedbackSubmit": "Submit",
+  "feedbackContentEmpty": "Please fill in feedback content",
+  "feedbackThanks": "Thank you for your feedback!",
+  "feedbackTypeBug": "Bug",
+  "feedbackTypeUi": "UI Issue",
+  "feedbackTypePerf": "Performance",
+  "feedbackTypeSuggestion": "Suggestion",
+  "feedbackTypeOther": "Other",
+
+  "workListTotal": "{total} records",
+  "@workListTotal": {
+    "description": "Total record count in list",
+    "placeholders": {
+      "total": {
+        "type": "int",
+        "example": "100"
+      }
+    }
+  },
+  "workLoadFailed": "Failed to load, please retry",
+  "workRetry": "Retry",
+  "workEmpty": "No data",
+  "workStatusNormal": "Normal",
+  "workStatusDisabled": "Disabled",
+  "workPlaceholderComing": "{title} module coming soon",
+  "@workPlaceholderComing": {
+    "description": "Placeholder page: module coming soon",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "Menus"
+      }
+    }
+  },
+
+  "colUsername": "Username",
+  "colName": "Name",
+  "colPhone": "Phone",
+  "colDept": "Department",
+  "colStatus": "Status",
+  "colRoleName": "Role Name",
+  "colRoleCode": "Role Code",
+  "colSort": "Sort",
+  "colRemark": "Remark",
+  "colTitle": "Title",
+  "colType": "Type",
+  "colPublisher": "Publisher",
+  "colPublishTime": "Publish Time",
+  "colDeptName": "Dept Name",
+  "colDeptCode": "Dept Code",
+  "colPositionName": "Position Name",
+  "colPositionCode": "Position Code",
+
+  "splashSubtitle": "Mobile",
+  "splashSkip": "Skip {count}",
+  "@splashSkip": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  }
+}
